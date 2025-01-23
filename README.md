@@ -31,7 +31,9 @@ O sistema já vem com as seguintes funcionalidades configuradas e prontas para u
 
 - **Proteção CSRF**: O sistema possui proteção contra CSRF, garantindo a segurança nas requisições feitas pelo usuário.
   
-- **Tentativa de Login**: O sistema registra tentativas de login, se um usuário errar mais de 5 vezes, o acesso é bloqueado por 5 minutos, prevenindo ataques de força bruta.
+- **Bloqueio de Login**: O sistema registra tentativas de login, se um usuário errar mais de 5 vezes, o acesso é bloqueado por 5 minutos, prevenindo ataques de força bruta.
+
+- **Controle de Acesso**: O sistema também permite o bloqueio de contas de usuários, seja por motivo de férias ou qualquer outra razão. Isso garante que apenas usuários autorizados tenham acesso ao sistema, mantendo o controle de segurança e evitando acessos indevidos.
   
 - **URLs Amigáveis**: As URLs do sistema são amigáveis e facilitam a navegação.
   
