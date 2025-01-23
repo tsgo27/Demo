@@ -31,7 +31,7 @@ O sistema já vem com as seguintes funcionalidades configuradas e prontas para u
 
 - **Proteção CSRF**: O sistema possui proteção contra CSRF, garantindo a segurança nas requisições feitas pelo usuário.
   
-- **Tentativa de Login**: O sistema está configurado para registrar tentativas de login e implementar medidas de segurança.
+- **Tentativa de Login**: O sistema registra tentativas de login, se um usuário errar mais de 5 vezes, o acesso é bloqueado por 5 minutos, prevenindo ataques de força bruta.
   
 - **URLs Amigáveis**: As URLs do sistema são amigáveis e facilitam a navegação.
   
