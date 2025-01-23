@@ -1,8 +1,13 @@
-# School Library - Sistema de Gestão de Biblioteca Escolar
+# Demo - Sistema Modelo para Desenvolvimento
 
-O Sistema foi desenvolvido para facilitar e otimizar o gerenciamento de livros, tornando o processo de empréstimo e devolução mais ágil e eficiente para alunos. Além disso, o sistema conta com um dashboard intuitivo que apresenta indicadores de quantos livros estão reservados, emprestados, e também o status dos alunos (ativos ou inativos), proporcionando uma visão clara e prática.
+O Demo - Sistema Modelo para Desenvolvimento foi criado como uma referência prática para estudantes universitários e desenvolvedores em formação, oferecendo uma base sólida para o aprendizado de desenvolvimento de sistemas.
 
-![Screenshot_1](https://github.com/user-attachments/assets/d106ef30-22fd-4d91-8433-296fa8fa0c67)
+O projeto adota a arquitetura MVC (Model-View-Controller), que organiza de forma clara as camadas de dados, lógica de negócios e interface, facilitando a manutenção e a escalabilidade do código. Ele também conta com configurações de segurança implementadas, proporcionando um ambiente confiável para experimentação.
+
+Além disso, o modelo já possui uma configuração de conexão com o banco de dados estruturada, exigindo apenas que o usuário insira o nome do banco e a senha para utilizá-lo.
+
+![tela-login](https://github.com/user-attachments/assets/7f69a013-b0b9-4556-82fb-05c698243c71)
+
 
 
 ##
@@ -18,13 +23,33 @@ O Sistema foi desenvolvido para facilitar e otimizar o gerenciamento de livros, 
 - **Banco de Dados**: MySQL  
 - **Back-End**: PHP  
 
+---
+
+## Funcionalidades Configuradas
+
+O sistema já vem com as seguintes funcionalidades configuradas e prontas para uso:
+
+- **Proteção CSRF**: O sistema possui proteção contra CSRF, garantindo a segurança nas requisições feitas pelo usuário.
+  
+- **Tentativa de Login**: O sistema está configurado para registrar tentativas de login e implementar medidas de segurança.
+  
+- **URLs Amigáveis**: As URLs do sistema são amigáveis e facilitam a navegação.
+  
+- **Página de Erro 403**: Caso o usuário tente acessar uma página sem permissão, será exibida uma página de erro 403.
+  
+- **Página de Erro 404**: Caso a página solicitada não seja encontrada, o sistema exibe uma página de erro 404.
+  
+- **Página de Erro de Conexão com Banco de Dados**: Caso haja falha na conexão com o banco de dados, o sistema exibirá uma página de erro específica. Além disso, o arquivo `.env` permite habilitar o modo de debug para exibir os erros diretamente na página de erro de conexão, facilitando a identificação do problema.
+
 
 ---
 
-## Variáveis ​​de ambiente
-Para executar este projeto, você precisará alterar as seguintes variáveis ​​de ambiente no seu arquivo .env
+## Variáveis de Ambiente
 
-DB_NAME=school_library
+Para executar o projeto, o usuário deve configurar primeiro um servidor local, como o **XAMPP**, ou qualquer servidor de sua preferência. Após isso, é necessário importar o banco de dados chamado **db_demo**, que está localizado na pasta **database** do projeto.
+No arquivo **.env**, encontram-se as configurações de conexão com o banco de dados, como o **nome do banco**, **usuário** e **senha**, conforme os seguintes parâmetros:
+
+DB_NAME=db_demo
 
 DB_USER=root
 
@@ -32,16 +57,24 @@ DB_PASSWORD=
 
 ---
 
+Após importar o banco de dados, o usuário pode acessar o sistema utilizando os seguintes dados de login:
+
+- **Matrícula**: 123456789  
+- **Senha**: admin  
+
+Esses dados fornecem acesso inicial ao sistema, permitindo que o usuário personalize demo conforme suas necessidades.
+
+
+
 ## Autores
 
-- [Jakeline Macedo da Silva](https://www.linkedin.com/in/jakeline-silva-80635398/)
-- [Tiago Soares da Conceição](https://www.linkedin.com/in/tsgo27/)
-- [Vanessa da Silva Santos](https://www.linkedin.com/in/vanessa-da-silva-santos-50688b227/)
+- Desenvolvedor sua equipe
+
 
 
 ---
 
 ## Licença
-Copyright © 2023 School Library.
+Copyright © 2025 Demo.
 
 Este projeto é licenciado [MIT](https://choosealicense.com/licenses/mit/)
