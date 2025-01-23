@@ -12,7 +12,8 @@ Além disso, o modelo já possui uma configuração de conexão com o banco de d
 
 ##
 
-![Screenshot_2](https://github.com/user-attachments/assets/8a5707a0-f012-4c1f-abd9-e28649642501)
+![pagina-home](https://github.com/user-attachments/assets/b58f32dc-02b3-49db-b50b-984bd6ffea61)
+
 
 ---
 
