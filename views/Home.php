@@ -8,7 +8,7 @@ require_once __DIR__ . '/../Config/web_extends.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Library | Home</title>
+    <title>Demo | Home</title>
     <link rel="stylesheet" href="../views/css/layout-main.css">
     <link rel="shortcut icon" href="../public/img/favicon-colegio.ico" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
@@ -18,7 +18,7 @@ require_once __DIR__ . '/../Config/web_extends.php';
 
     <?php
     // Include Menu Sidebar
-    require_once __DIR__ . '/../Includes/Menu_Sidebar.php';  
+    require_once __DIR__ . '/../Includes/Menu_Sidebar.php';
     ?>
 
 
@@ -57,7 +57,7 @@ require_once __DIR__ . '/../Config/web_extends.php';
                 <div class="xp-breadcrumbbar text-center">
                     <h4 class="page-title">Home</h4>
                     <ol class="breadcrumb">
-                        <li class="sub-titulo"><a>School Library / Home</a></li>
+                        <li class="sub-titulo"><a>Demo / Home</a></li>
                     </ol>
                 </div>
             </div>
@@ -71,11 +71,11 @@ require_once __DIR__ . '/../Config/web_extends.php';
     require_once __DIR__ . '/../Includes/Cards.php';
     require_once __DIR__ . '/../Includes/Grafico_barras.php';
     require_once __DIR__ . '/../Includes/Grafico_pizza.php';
-       
+
     ?>
-        
+
     </div>
-     
+
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

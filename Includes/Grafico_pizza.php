@@ -24,7 +24,7 @@
             ]);
 
             var options = {
-                title: 'Alunos: Ativos/Inativos'
+                title: 'Usuários: Ativos/Inativos'
             };
             var chart = new google.visualization.PieChart(document.getElementById('grafico-alunos'));
             chart.draw(data, options);

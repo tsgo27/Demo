@@ -28,7 +28,7 @@ $options->set('isPhpEnabled', true); // Habilita a execução de scripts PHP
 $dompdf = new Dompdf($options);
 
 // ACESSAR IMAGEM EXTERNA
-$logo = "<img src='http://localhost/schoollibrary/public/img/logo-colegio.png' style= 'width:120px'>";
+$logo = "<img src='http://localhost/demo/public/img/demo.png' style= 'width:120px'>";
 
 $dompdf = new Dompdf($options);
 

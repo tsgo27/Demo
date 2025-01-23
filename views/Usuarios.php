@@ -9,18 +9,18 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Library | Usuários</title>
+    <title>Demo | Usuários</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../views/css/layout-main.css">
-    <link rel="shortcut icon" href="../public/img/favicon-colegio.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    
+
     <?php
     // Include Menu Sidebar
-    require_once __DIR__ . '/../Includes/Menu_Sidebar.php';  
+    require_once __DIR__ . '/../Includes/Menu_Sidebar.php';
     ?>
 
 
@@ -58,7 +58,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                 <div class="xp-breadcrumbbar text-center">
                     <h4 class="page-title">Usuários</h4>
                     <ol class="breadcrumb">
-                        <li class="sub-titulo"><a>School Library / Usuários</a></li>
+                        <li class="sub-titulo"><a>Demo / Usuários</a></li>
                     </ol>
                 </div>
             </div>
@@ -117,12 +117,12 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 
                                         $sql = "SELECT * FROM usuarios ORDER BY data_registro DESC";
                                         $result = $pdo->query($sql);
-                                        
+
                                         if ($result->rowCount() > 0) {
                                             while ($user_data = $result->fetch(PDO::FETCH_ASSOC)) {
                                                 $statusClass = $user_data['user_status'] === 'Ativo' ? 'btn-danger' : 'btn-success';
 
-                                                echo "<tr 
+                                                echo "<tr
                                                 data-idUsuario='" . htmlspecialchars($user_data['idUsuario'], ENT_QUOTES, 'UTF-8') . "'
                                                 data-matricula='" . htmlspecialchars($user_data['matricula'], ENT_QUOTES, 'UTF-8') . "'
                                                 data-nome='" . htmlspecialchars($user_data['nome'], ENT_QUOTES, 'UTF-8') . "'
@@ -138,7 +138,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                                                 echo "<td>" . htmlspecialchars($user_data['email'], ENT_QUOTES, 'UTF-8') . "</td>";
                                                 echo "<td>" . htmlspecialchars($user_data['user_status'], ENT_QUOTES, 'UTF-8') . "</td>";
                                                 echo "<td>" . htmlspecialchars($user_data['user_tipo'], ENT_QUOTES, 'UTF-8') . "</td>";
-                                            
+
 
                                                 echo "<td class='col-lg-3'>
                                                     <a href='#editEmployeeModal' class='edit editarUsuario btn btn-warning' data-toggle='modal'>Editar</a>

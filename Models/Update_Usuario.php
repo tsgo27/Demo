@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Executa a query de atualização
         if ($stmt->execute()) {
-            header("Location: http://localhost/schoollibrary/views/Usuarios.php");
+            header("Location: http://localhost/demo/views/Usuarios.php");
             exit();
         } else {
             throw new Exception("Erro na atualização da tabela obra");
@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     } catch (Exception $e) {
         $_SESSION['error'] = $e->getMessage();
-        header("Location: http://localhost/schoollibrary/views/Usuarios.php");
+        header("Location: http://localhost/demo/views/Usuarios.php");
         exit();
 
     } finally {

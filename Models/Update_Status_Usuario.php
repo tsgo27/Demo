@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once __DIR__ . '/../Config/web_extends.php'; 
+require_once __DIR__ . '/../Config/web_extends.php';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (!$user) {
             $_SESSION['error'] = 'Usuário não encontrado.';
-            header('Location: /schoollibrary/views/Login.php');
+            header('Location: /demo/views/Login.php');
             exit();
         }
 
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 } else {
-    header('Location: /schoollibrary/views/Login.php');
+    header('Location: /demo/views/Login.php');
     exit();
 }
 ?>

@@ -17,7 +17,7 @@ if (!isset($_SESSION['user_agent']) || !isset($_SESSION['user_ip'])) {
         // Se houver discrepância, destruir a sessão.
         session_unset();
         session_destroy();
-        $loginUrl = '/schoollibrary/views/Login.php';
+        $loginUrl = '/demo/views/Login.php';
         header("Location: $loginUrl");
         exit();
     }
@@ -27,7 +27,7 @@ if (!isset($_SESSION['user_agent']) || !isset($_SESSION['user_ip'])) {
 session_regenerate_id(true);
 
 if (!isset($_SESSION['idUsuario'])) {
-    $loginUrl = '/schoollibrary/views/Login.php';
+    $loginUrl = '/demo/views/Login.php';
     header("Location: $loginUrl");
     exit();
 }

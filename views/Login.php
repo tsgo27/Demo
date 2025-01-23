@@ -1,13 +1,13 @@
 <?php
 session_start();
-define('BASE_URL', '/schoollibrary');
+define('BASE_URL', '/demo');
 require_once __DIR__ . '/../Config/verify_csrf.php';
 $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
-   
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="./css/login.css">
    <link rel="stylesheet" href="../public/fonts/fonts.css">
-   <link rel="shortcut icon" href="../public/img/favicon-colegio.ico" type="image/x-icon"/>
+   <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon"/>
 </head>
 
 <body>

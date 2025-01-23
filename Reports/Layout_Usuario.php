@@ -12,7 +12,7 @@ require_once __DIR__ . '/../Config/web_extends.php';
 </head>
 
 <body>
-    <h1>School Library - Relatório de Usuários</h1>
+    <h1>Nome da empresa - Relatório de Usuários</h1>
     <hr>
     <div class="table-responsive">
         <table class="table table-striped table-hover">
@@ -47,7 +47,7 @@ require_once __DIR__ . '/../Config/web_extends.php';
                             echo "<td class='col-lg-1'>" . htmlspecialchars($user_data['user_status']) . "</td>";
                             echo "<td class='col-lg-1'>" . htmlspecialchars($user_data['user_tipo']) . "</td>";
 
-                          
+
                         }
                     }
                 } catch (PDOException $e) {

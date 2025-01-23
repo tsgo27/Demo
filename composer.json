@@ -1,27 +1,20 @@
 {
-    "name": "project/school-library",
-    "description": "Projeto Interdisciplinar Extensionista - 2023 PHP Biblioteca \"School Library\"",
+    "name": "project/dev-demo",
+    "description": "Modelo de project para trabalho \"Demo\"",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "schoollibrary\\Controllers\\": "Controllers/",
-            "schoollibrary\\Models\\": "Models/",
-            "schoollibrary\\Config\\": "Config/"
+            "demo\\Controllers\\": "Controllers/",
+            "demo\\Models\\": "Models/",
+            "demo\\Config\\": "Config/"
         }
     },
     "authors": [
         {
-            "name": "Tiago Soares da Conceiçao",
-            "email": "tsgo.soares@gmail.com"
-        },
-        {
-            "name": "Vanessa da Silva Santos",
-            "email": "vanessa30lv@gmail.com"
-        },
-        {
-            "name": "Jakeline Macedo da Silva",
-            "email": "jakelinebrt@gmail.com"
+            "name": "Desevolvedor sua equipe",
+            "email": "demo.dev@email.com"
         }
+
     ],
     "minimum-stability": "alpha",
     "require": {
