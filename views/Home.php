@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../Config/web_extends.php';
+require_once __DIR__ . '/../Config/web_extends.php'; // Inclui arquivos de configuração e funcionamento do sistema.
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -10,8 +10,8 @@ require_once __DIR__ . '/../Config/web_extends.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo | Home</title>
     <link rel="stylesheet" href="../views/css/layout-main.css">
-    <link rel="shortcut icon" href="../public/img/favicon-colegio.ico" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon"/>
 </head>
 
 <body>
@@ -73,7 +73,6 @@ require_once __DIR__ . '/../Config/web_extends.php';
     require_once __DIR__ . '/../Includes/Grafico_pizza.php';
 
     ?>
-
     </div>
 
 

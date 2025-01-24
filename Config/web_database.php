@@ -2,7 +2,7 @@
 require_once __DIR__ . '/web_app.php';
 
 /*
-* Database Connections
+* Conexões de banco de dados
 *
 */
 

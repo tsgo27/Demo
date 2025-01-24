@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/../Config/web_extends.php';
-$_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+require_once __DIR__ . '/../Config/web_extends.php'; // Inclui arquivos de configuração e funcionamento do sistema.
+$_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // Gera tokens aleatórios a cada sessão do usuário, garantindo maior segurança contra ataques CSRF.
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -12,14 +12,14 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
     <title>Demo | Usuários</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../views/css/layout-main.css">
-    <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon"/>
 </head>
 
 <body>
 
     <?php
-    // Include Menu Sidebar
+    // Include Menu Sidebar lateral
     require_once __DIR__ . '/../Includes/Menu_Sidebar.php';
     ?>
 
@@ -173,7 +173,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                                 </button>
                             </div>
                             <form method="POST" action="<?php echo BASE_URL; ?>/Models/Insert_Usuario.php" id="cadastroForm">
-                            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" autocomplete="off">
+                            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" autocomplete="off"> <!-- Token de segurança -->
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <label>Matrícula</label>
@@ -224,7 +224,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                                 </button>
                             </div>
                             <form method="POST" action="<?php echo BASE_URL; ?>/Models/Update_Usuario.php" id="updateForm">
-                            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" autocomplete="off">
+                            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" autocomplete="off"> <!-- Token de segurança -->
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <input type="hidden" name="idUsuario" id="idUsuario" class="form-control">

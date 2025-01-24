@@ -1,6 +1,6 @@
 <?php
 /*
-* Load environment variables from .env file
+* Carregar variáveis ​​de ambiente do arquivo .env
 *
 */
 

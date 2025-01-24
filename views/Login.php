@@ -1,9 +1,8 @@
 <?php
-session_start();
-define('BASE_URL', '/demo');
-require_once __DIR__ . '/../Config/verify_csrf.php';
-$_SESSION['csrf_token'] = bin2hex(random_bytes(32));
-
+session_start(); // Inicia a sessão para gerenciar dados entre requisições do usuário.
+define('BASE_URL', '/demo'); // Define o caminho base do sistema. Não a remova ou altere.
+require_once __DIR__ . '/../Config/verify_csrf.php'; // Inclui o arquivo de verificação CSRF, que protege contra ataques de falsificação de requisições.
+$_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // Gera tokens aleatórios a cada sessão do usuário, garantindo maior segurança contra ataques CSRF.
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -12,7 +11,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>School Library | Login</title>
+   <title>Demo | Login</title>
    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="./css/login.css">
    <link rel="stylesheet" href="../public/fonts/fonts.css">
