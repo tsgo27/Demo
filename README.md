@@ -1,6 +1,6 @@
 # Demo - Sistema Modelo para Desenvolvimento
 
-O Demo - Sistema Modelo para Desenvolvimento foi criado como uma referência prática para estudantes universitários e desenvolvedores em formação, oferecendo uma base sólida para o aprendizado de desenvolvimento de sistemas.
+O Demo - Sistema Modelo para Desenvolvedores, foi criado como uma referência prática para estudantes universitários em formação, oferecendo uma base sólida para o aprendizado de desenvolvimento de sistemas.
 
 O projeto adota a arquitetura MVC (Model-View-Controller), que organiza de forma clara as camadas de dados, lógica de negócios e interface, facilitando a manutenção e a escalabilidade do código. Ele também conta com configurações de segurança implementadas, proporcionando um ambiente confiável para experimentação.
 
