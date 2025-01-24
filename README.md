@@ -40,7 +40,7 @@ O sistema já vem com as seguintes funcionalidades configuradas e prontas para u
   
 - **Página de Erro 403**: Caso o usuário tente acessar uma página sem permissão, será exibida uma página de erro 403.
   
-- **Página de Erro 404**: Caso a página solicitada não seja encontrada, o sistema exibe uma página de erro 404.
+- **Página de Erro 404**: Caso a página solicitada não seja encontrada, o sistema exibe uma página de erro 404 personalizada.
   
 - **Página de Erro de Conexão com Banco de Dados**: Caso haja falha na conexão com o banco de dados, o sistema exibirá uma página de erro específica. Além disso, o arquivo `.env` permite habilitar o modo de debug para exibir os erros diretamente na página de erro de conexão, facilitando a identificação do problema.
 
