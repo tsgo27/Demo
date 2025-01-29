@@ -10,11 +10,6 @@ Além disso, o modelo já possui uma configuração de conexão com o banco de d
 
 
 
-##
-
-![pagina-home](https://github.com/user-attachments/assets/b58f32dc-02b3-49db-b50b-984bd6ffea61)
-
-
 ---
 
 ## Tecnologia Utilizada no Projeto
