@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . '/../Config/web_extends.php'; // Inclui arquivos de configuração e funcionamento do sistema.
+// Inclui arquivos de configuração e funcionamento do sistema.
+require_once __DIR__ . '/../Config/web_extends.php'; 
 $_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // Gera tokens aleatórios a cada sessão do usuário, garantindo maior segurança contra ataques CSRF.
 ?>
 <!DOCTYPE html>
@@ -79,7 +80,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // Gera tokens aleatórios 
                                         <i class="material-icons">&#xE147;</i>
                                         <span>Adicionar</span>
                                     </a>
-                                    <a href="../Reports/Usuarios.php" target="_blank" class="btn btn-primary" id="gerarRelatorio">
+                                    <a href="../Reports/config_relatorio_usuarios.php" target="_blank" class="btn btn-primary" id="gerarRelatorio">
                                         <i class="material-icons">&#xe8ad;</i>
                                         <span>Imprimir</span>
                                     </a>
@@ -172,7 +173,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // Gera tokens aleatórios 
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <form method="POST" action="<?php echo BASE_URL; ?>/Models/Insert_Usuario.php" id="cadastroForm">
+                            <form method="POST" action="<?php echo BASE_URL; ?>/Controllers/Insert_Usuario.php" id="cadastroForm">
                             <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" autocomplete="off"> <!-- Token de segurança -->
                                 <div class="modal-body">
                                     <div class="form-group">

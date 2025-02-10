@@ -24,4 +24,6 @@ header("Location: ../views/Login.php");
 
 // Garante que o código após o redirecionamento não será executado, encerrando o script.
 exit();
+
 ?>
+

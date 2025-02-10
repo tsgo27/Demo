@@ -33,4 +33,6 @@ if (!isset($_SESSION['idUsuario'])) {
 }
 
 $idUsuario = $_SESSION['idUsuario'];
+
+
 ?>

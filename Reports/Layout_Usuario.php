@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . '/../Config/web_extends.php'; // Inclui arquivos de configuração e funcionamento do sistema.
+// Inclui arquivos de configuração e funcionamento do sistema.
+require_once __DIR__ . '/../Config/web_extends.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">

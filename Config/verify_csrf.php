@@ -1,6 +1,6 @@
 <?php
 /*
-* Validation Token
+* Validação de Token
 *
 */
 

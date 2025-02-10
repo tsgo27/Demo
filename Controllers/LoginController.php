@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     unset($_SESSION['error']);
                     $_SESSION['login_attempts'] = 0; // Reset login attempts on successful login
-                    header("Location: ../views/Home.php");
+                    header("Location: ../views/Usuarios.php");
                     exit();
                 } else {
                     $_SESSION['login_attempts']++;

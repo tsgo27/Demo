@@ -1,6 +1,6 @@
 {
     "name": "project/dev-demo",
-    "description": "Modelo de project para trabalho \"Demo\"",
+    "description": "Modelo de projeto para trabalho \"Demo\"",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -11,7 +11,7 @@
     },
     "authors": [
         {
-            "name": "Desevolvedor sua equipe",
+            "name": "Desenvolvedor sua equipe",
             "email": "demo.dev@email.com"
         }
 

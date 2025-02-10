@@ -34,8 +34,6 @@ function loadEnv($filePath) {
     } catch (Exception $e) {
         // Exibe uma mensagem mais genérica e segura
         echo "Erro ao carregar arquivo de conexão!";
-        // Para fins de depuração ou produção, você pode registrar o erro em um log:
-        // error_log($e->getMessage(), 3, 'path/to/error_log.log');
         exit();
     }
 }
