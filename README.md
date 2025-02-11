@@ -51,7 +51,7 @@ O sistema já vem com as seguintes funcionalidades configuradas e prontas para u
 ## Variáveis de Ambiente
 
 Para executar o projeto, o usuário deve configurar primeiro um servidor local, como o XAMPP, ou qualquer servidor de sua preferência. Após isso, é necessário importar o banco de dados chamado db_demo, que está localizado na pasta database do projeto.
-Antes de configurar a conexão com o banco de dados, o estudante deve copiar o arquivo .env.example localizado na raiz do projeto e renomeá-lo para .env. Esse arquivo contém as configurações necessárias para a conexão com o banco de dados, incluindo o nome do banco, usuário e senha, conforme os seguintes parâmetros:
+Antes de configurar a conexão com o banco de dados, o estudante deve copiar o arquivo **.env.example** localizado na raiz do projeto e renomeá-lo para **.env** Esse arquivo contém as configurações necessárias para a conexão com o banco de dados, incluindo o nome do banco, usuário e senha, conforme os seguintes parâmetros:
 
 DB_NAME=db_demo
 
