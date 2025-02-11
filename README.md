@@ -1,4 +1,4 @@
-# Demo - Sistema Modelo para Desenvolvimento
+# Sistema Modelo para Desenvolvimento para iniciantes
 
 O Demo - Sistema Modelo para Desenvolvedores, foi criado como uma referência prática para estudantes universitários em formação, oferecendo uma base sólida para o aprendizado de desenvolvimento de sistemas.
 
