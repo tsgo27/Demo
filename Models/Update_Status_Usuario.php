@@ -10,15 +10,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $novoStatus = htmlspecialchars(filter_input(INPUT_POST, 'novo_status'), ENT_QUOTES, 'UTF-8');
 
         // Verificar se o usuário existe no banco de dados
-        $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE matricula = ?");
+        $stmt = $pdo->prepare("SELECT 1 FROM usuarios WHERE matricula = ?");
         $stmt->execute([$matricula]);
-        $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if (!$user) {
-            $_SESSION['error'] = 'Usuário não encontrado.';
+        if ($stmt->fetchColumn() === false) {
             header('Location: /demo/views/Login.php');
             exit();
         }
+
+
 
         // Atualizar o status do usuário no banco de dados
         $stmt = $pdo->prepare("UPDATE usuarios SET user_status = ? WHERE matricula = ?");
@@ -36,4 +36,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header('Location: /demo/views/Login.php');
     exit();
 }
-?>

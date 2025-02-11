@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 * Exibir nome do usuário logado
 *
@@ -9,7 +10,8 @@ try {
     // Verifica se a matrícula está presente na sessão
     $matricula = $_SESSION['matricula'] ?? null;
     if (!$matricula) {
-        throw new Exception('Sessão de matrícula não encontrada.');
+        header("Location: /demo/views/Login.php");
+        exit();
     }
 
     // Consulta o nome do usuário no banco de dados
@@ -18,13 +20,14 @@ try {
     $user = $stmt->fetchColumn();
 
     if (!$user) {
-        throw new Exception('Usuário não encontrado.');
+        session_destroy(); // Destroi a sessão para evitar inconsistências
+        header("Location: /demo/views/Login.php");
+        exit();
     }
 
     $userName = $user;
-
 } catch (Exception $e) {
-    // Captura outros erros e exibe uma mensagem
-    echo "Erro: " . $e->getMessage();
+    session_destroy(); // Garante que a sessão será encerrada em caso de erro
+    header("Location: /demo/views/Login.php");
     exit();
 }
