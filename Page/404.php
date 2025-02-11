@@ -22,7 +22,7 @@
         <h3>Ops! Está página e/ou link não existe...</h3><br>
         <p class="page-title">Não foi possível encontrar a página que você procura!</p>
         <div class="buttons-con">
-            <div class="action-link-wrap"><a href="../views/Usuarios.php" class="link-button">Voltar</a></div>
+            <div class="action-link-wrap"><a href="../views/usuarios.php" class="link-button">Voltar</a></div>
         </div>
         </body>
 

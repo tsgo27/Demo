@@ -1,7 +1,8 @@
 <?php
 // Inclui arquivos de configuração e funcionamento do sistema.
-require_once __DIR__ . '/../Config/web_extends.php'; 
-$_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // Gera tokens aleatórios a cada sessão do usuário, garantindo maior segurança contra ataques CSRF.
+require_once __DIR__ . '/../Config/bootstrap.php'; 
+// Gera tokens aleatórios a cada sessão do usuário, garantindo maior segurança contra ataques CSRF.
+$_SESSION['csrf_token'] = bin2hex(random_bytes(32)); 
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">

@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/web_app.php';
+require_once __DIR__ . '/loadEnv.php';
 
 /*
 * Conexões de banco de dados
