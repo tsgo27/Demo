@@ -39,7 +39,8 @@ function loadEnv($filePath) {
 }
 
 // Caminho do arquivo .env
-$envFilePath = __DIR__ . '/.env';
+$envFilePath = __DIR__ . '/../.env'; 
+
 
 // Carrega as variáveis do arquivo .env
 loadEnv($envFilePath);
