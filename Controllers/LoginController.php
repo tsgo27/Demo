@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['matricula'] = buscarNovaMatricula($pdo, $user['idUsuario']) ?? $matricula;
 
         $_SESSION['login_attempts'] = 0; // Reset de tentativas
-        header("Location: ../views/Home.php");
+        header("Location: ../views/Usuarios.php");
         exit();
 
     } catch (Exception $e) {
