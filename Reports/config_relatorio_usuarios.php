@@ -1,6 +1,6 @@
 <?php
 // Inclui arquivos de configuração e funcionamento do sistema.
-require_once __DIR__ . '/../Config/web_extends.php'; 
+require_once __DIR__ . '/../Config/bootstrap.php'; 
 
 // AUTOLOAD DO COMPOSER
 require __DIR__.'/vendor/autoload.php';
