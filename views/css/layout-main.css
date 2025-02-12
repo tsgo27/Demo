@@ -297,7 +297,7 @@ a:focus {
     color: #fff;
     margin-bottom: 0;
     margin-top: -60px;   /* Subir titulo da págaina ---Tiago---*/
-   margin-left: 10px;
+    margin-left: -6px;
 
 }
 
@@ -422,6 +422,7 @@ a:focus {
     position: relative;
     display: block;
     padding: 4px 10px !important;
+   
 }
 
 .nav-item .nav-link .material-icons {
