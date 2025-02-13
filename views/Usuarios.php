@@ -1,8 +1,8 @@
 <?php
 // Inclui arquivos de configuração e funcionamento do sistema.
-require_once __DIR__ . '/../Config/bootstrap.php'; 
+require_once __DIR__ . '/../Config/bootstrap.php';
 // Gera tokens aleatórios a cada sessão do usuário, garantindo maior segurança contra ataques CSRF.
-$_SESSION['csrf_token'] = bin2hex(random_bytes(32)); 
+$_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -15,7 +15,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../views/css/layout-main.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -26,7 +26,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
     ?>
 
 
-<!-------------NavbBar Start------------------------->
+    <!-------------NavbBar Start------------------------->
     <div id="content">
         <div class="top-navbar">
             <div class="xd-topbar">
@@ -65,11 +65,11 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                 </div>
             </div>
         </div>
-<!-------------NavbBar END--------------------------->
+        <!-------------NavbBar END--------------------------->
 
 
 
-<!-------------Tabela Principal-content-Start-------->
+        <!-------------Tabela Principal-content-Start-------->
         <div class="main-content">
             <div class="row">
                 <div class="col-md-12">
@@ -151,11 +151,11 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                         </div>
                     </div>
                 </div>
-<!-------------Tabela Principal-content-END---------->
+                <!-------------Tabela Principal-content-END---------->
 
 
 
-<!-------------Modal Adicionar Usuário-Start---------->
+                <!-------------Modal Adicionar Usuário-Start---------->
                 <div class="modal fade" tabindex="-1" id="addEmployeeModal" role="dialog">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -165,8 +165,8 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <form method="POST" action="<?php echo BASE_URL; ?>/Controllers/Insert_Usuario.php" id="cadastroForm">
-                            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" autocomplete="off"> <!-- Token de segurança -->
+                            <form method="POST" action="<?php echo BASE_URL; ?>/Models/Insert_Usuario.php" id="cadastroForm">
+                                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" autocomplete="off"> <!-- Token de segurança -->
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <label>Matrícula</label>
@@ -186,9 +186,8 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                                             <option value="Diretora">Diretora</option>
                                             <option value="Professor">Professor</option>
                                         </select>
-                                        <label>Status conta</label>
-                                        <select name="user_status" class="form-control" required>
-                                            <option value="Ativo">Ativo</option>
+                                        <select name="user_status" class="form-control" required hidden>
+                                            <option value="Ativo" selected>Ativo</option>
                                             <option value="Inativo">Inativo</option>
                                         </select>
                                     </div>
@@ -197,16 +196,16 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                                     <input type="submit" name="submit" id="submitAdicionar" class="btn btn-success" value="Adicionar">
                                 </div>
-                            </div>
+                        </div>
                         </form>
                     </div>
                 </div>
-<!-------------Modal Adicionar Usuário--END----------->
+                <!-------------Modal Adicionar Usuário--END----------->
 
 
 
 
-<!-------------Modal Editar Usuário-Start---------------->
+                <!-------------Modal Editar Usuário-Start---------------->
                 <div class="modal fade" tabindex="-1" id="editEmployeeModal" role="dialog">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -217,7 +216,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                                 </button>
                             </div>
                             <form method="POST" action="<?php echo BASE_URL; ?>/Models/Update_Usuario.php" id="updateForm">
-                            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" autocomplete="off"> <!-- Token de segurança -->
+                                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" autocomplete="off"> <!-- Token de segurança -->
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <input type="hidden" name="idUsuario" id="idUsuario" class="form-control">
@@ -245,7 +244,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                             </form>
                         </div>
                     </div>
-<!-------------Modal Editar usuário-END------------------>
+                    <!-------------Modal Editar usuário-END------------------>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
