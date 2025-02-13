@@ -3,6 +3,8 @@ session_start();
 require_once __DIR__ . '/../Config/bootstrap.php';
 
 
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Recebendo os dados do formulário
@@ -14,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute([$matricula]);
 
         if ($stmt->fetchColumn() === false) {
-            header('Location: /demo/views/Login.php');
+            header('Location:/demo/views/Login.php');
             exit();
         }
 
@@ -33,6 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 } else {
-    header('Location: /demo/views/Login.php');
+    header('Location:/demo/views/Login.php');
     exit();
 }

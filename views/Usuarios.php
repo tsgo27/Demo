@@ -124,6 +124,15 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                                             while ($user_data = $result->fetch(PDO::FETCH_ASSOC)) {
                                                 $statusClass = $user_data['user_status'] === 'Ativo' ? 'btn-danger' : 'btn-success';
 
+                                                echo "<tr 
+                                                data-idUsuario='" . htmlspecialchars($user_data['idUsuario'], ENT_QUOTES, 'UTF-8') . "'
+                                                data-matricula='" . htmlspecialchars($user_data['matricula'], ENT_QUOTES, 'UTF-8') . "'
+                                                data-nome='" . htmlspecialchars($user_data['nome'], ENT_QUOTES, 'UTF-8') . "'
+                                                data-telefone='" . htmlspecialchars($user_data['telefone'], ENT_QUOTES, 'UTF-8') . "'
+                                                data-email='" . htmlspecialchars($user_data['email'], ENT_QUOTES, 'UTF-8') . "'
+                                                data-user-status='" . htmlspecialchars($user_data['user_status'], ENT_QUOTES, 'UTF-8') . "'
+                                                data-user-tipo='" . htmlspecialchars($user_data['user_tipo'], ENT_QUOTES, 'UTF-8') . "'>";
+
                                                 echo "<td>" . htmlspecialchars($user_data['idUsuario'], ENT_QUOTES, 'UTF-8') . "</td>";
                                                 echo "<td>" . htmlspecialchars($user_data['matricula'], ENT_QUOTES, 'UTF-8') . "</td>";
                                                 echo "<td>" . htmlspecialchars($user_data['nome'], ENT_QUOTES, 'UTF-8') . "</td>";

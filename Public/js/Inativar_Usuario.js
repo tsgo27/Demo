@@ -25,7 +25,7 @@ $(document).ready(function () {
         // Envia os dados via AJAX para atualizar o status no banco de dados
         $.ajax({
             type: 'POST',
-            url: `../Models/Update_Status_Usuario.php?acao=${acao}`,
+            url: `../Models/update_status_usuario.php?acao=${acao}`,
             data: {
                 matricula: matricula,
                 novo_status: novoStatus
