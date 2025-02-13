@@ -179,11 +179,11 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <label>Matrícula</label>
-                                        <input type="text" name="matricula" maxlength="9" class="form-control" required>
+                                        <input type="text" name="matricula" maxlength="9" class="form-control" required oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                                         <label>Nome</label>
                                         <input type="text" name="nome" maxlength="60" class="form-control" required>
                                         <label>Telefone</label>
-                                        <input type="tel" name="telefone" maxlength="14" class="form-control" required>
+                                        <input type="text" name="telefone" maxlength="13" class="form-control phone_with_ddd" required>
                                         <label>E-mail</label>
                                         <input type="email" name="email" maxlength="60" class="form-control" required>
                                         <label>Senha</label>
@@ -257,6 +257,12 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.phone_with_ddd').mask('00 00000-0000'); // Mascara telefone
+});
+</script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../public/js/EditCamposUsuarios.js"></script>
