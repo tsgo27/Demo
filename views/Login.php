@@ -1,7 +1,7 @@
 <?php
 session_start(); // Inicia a sessão para gerenciar dados entre requisições do usuário.
 define('BASE_URL', '/demo'); // Define o caminho base do sistema. Não a remova ou altere.
-require_once __DIR__ . '/../Config/verify_csrf.php'; // Inclui o arquivo de verificação CSRF, que protege contra ataques de falsificação de requisições.
+require_once __DIR__ . '/../Config/config_csrf.php'; // Inclui o arquivo de verificação CSRF, que protege contra ataques de falsificação de requisições.
 $_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // Gera tokens aleatórios a cada sessão do usuário, garantindo maior segurança contra ataques CSRF.
 ?>
 <!DOCTYPE html>
