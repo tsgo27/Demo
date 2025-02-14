@@ -33,12 +33,18 @@ function loadEnv($filePath) {
         }
     } catch (Exception $e) {
         // Exibe uma mensagem mais genérica e segura
-        echo "<div style='display: flex; justify-content: 
-        center; align-items: center; height: 100vh; text-align: 
-        center; background-color: #f2f2f2;'>
-        <h2 style='color: black;'>Erro ao carregar variáveis de ambiente</h2>
-      </div>";
-exit();
+        echo "<div style='position: relative; height: 100vh; background-color: #f2f2f2; font-family: Arial,;'>
+                <!-- Logo no canto superior esquerdo -->
+                <img src='../public/img/logo-php.png' alt='Logo' 
+                    style='position: absolute; top: 20px; left: 20px; width: 100px;'>
+                
+                <!-- Mensagem centralizada -->
+                <div style='display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center;'>
+                    <h2 style='color: black; padding: 20px; border-radius: 10px;'>
+                        Php informa: Erro ao carregar variáveis de ambiente
+                    </h2>
+                </div>
+              </div>";
         exit();
     }
 }
