@@ -8,7 +8,7 @@ function loadEnv($filePath) {
     try {
         // Verifica se o arquivo .env existe e é legível
         if (!file_exists($filePath) || !is_readable($filePath)) {
-            throw new Exception("Contate o suporte técnico.");
+            throw new Exception();
         }
 
         // Lê as linhas do arquivo .env
@@ -33,7 +33,12 @@ function loadEnv($filePath) {
         }
     } catch (Exception $e) {
         // Exibe uma mensagem mais genérica e segura
-        echo "Erro ao carregar variáveis de ambiente. " . $e->getMessage();
+        echo "<div style='display: flex; justify-content: 
+        center; align-items: center; height: 100vh; text-align: 
+        center; background-color: #f2f2f2;'>
+        <h2 style='color: black;'>Erro ao carregar variáveis de ambiente</h2>
+      </div>";
+exit();
         exit();
     }
 }
