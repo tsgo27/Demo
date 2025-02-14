@@ -52,3 +52,25 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 15:05:08 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\Demo\Controllers/../Config/config_csr.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 15:05:08 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\Demo\Controllers/../Config/config_csr.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Demo\Controllers\LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[2025-02-14 15:23:20] ERROR: Arquivo .env não encontrado ou inacessível.
+[14-Feb-2025 15:23:44 America/Sao_Paulo] Erro de conexão: SQLSTATE[HY000] [1049] Unknown database 'db_dem'
+[14-Feb-2025 15:24:00 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'js' não encontrada. in C:\xampp\htdocs\Demo\index.php on line 28
+[2025-02-14 15:53:31] ERROR: Arquivo .env não encontrado ou inacessível.
+[2025-02-14 15:54:58] ERROR: Arquivo .env não encontrado ou inacessível.
+[2025-02-14 15:55:06] ERROR: Arquivo .env não encontrado ou inacessível.
+[2025-02-14 15:55:14] ERROR: Arquivo .env não encontrado ou inacessível.
+[2025-02-14 15:55:23] ERROR: Arquivo .env não encontrado ou inacessível.
+[2025-02-14 15:55:24] ERROR: Arquivo .env não encontrado ou inacessível.
+[2025-02-14 15:55:33] ERROR: Arquivo .env não encontrado ou inacessível.
+[2025-02-14 15:55:46] ERROR: Arquivo .env não encontrado ou inacessível.
+[2025-02-14 15:56:05] ERROR: Arquivo .env não encontrado ou inacessível.
+[14-Feb-2025 15:59:08 America/Sao_Paulo] Erro de conexão: SQLSTATE[HY000] [1049] Unknown database 'db_dem'
+[2025-02-14 16:00:29] ERROR: Arquivo .env não encontrado ou inacessível.
+[2025-02-14 16:02:32] ERROR: Arquivo .env não encontrado ou inacessível.
+[2025-02-14 16:02:33] ERROR: Arquivo .env não encontrado ou inacessível.
+[2025-02-14 16:02:37] ERROR: Arquivo .env não encontrado ou inacessível.

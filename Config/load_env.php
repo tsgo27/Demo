@@ -39,12 +39,12 @@ function loadEnv($filePath)
         }
     } catch (Exception $e) {
         // Exibe uma mensagem mais genérica e segura
-        echo "<style>html, body {height: 100%;margin: 0;padding: 0;background-color: #1e1e1e; display: flex;justify-content: center;align-items: center;}</style>
+        echo "<style>html, body {height: 100%; margin: 0;padding: 0;background-color: #1e1e1e; display: flex; justify-content: center;align-items: center;}</style>
 
-        <div style='display: flex; justify-content: center; align-items: center; height:100vh; background-color: #1e1e1e; font-family: Arial, sans-serif;'>
-        <div style='background-color: #282c34; padding: 20px; border-radius: 10px; text-align: center; width: 400px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);'>
+        <div style='display: flex; justify-content: center; align-items: center; height:100vh; font-family: Arial, sans-serif; position: fixed; top: -80px;'>
+        <div style='background-color: #4f5b93; padding: 20px; border-radius: 10px; text-align: center; width: 400px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);'>
         <img src='../public/img/logo-php.png' alt='PHP Logo' style='width: 150px; margin-bottom: 20px;'>
-        <h2 style='color: #ffffff; margin-bottom: 10px;'>Atenção!</h2> <p style='color: #aaaaaa;'>Erro ao carregar variáveis de ambiente</p>
+        <h2 style='color: #ffffff; margin-bottom: 10px;'>Atenção!</h2> <p style='color:rgb(255, 255, 255);'>Erro ao carregar variáveis de ambiente.</p>
         </div></div>";
         exit();
     }
