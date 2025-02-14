@@ -1,11 +1,6 @@
 <?php
-session_start();
 require_once __DIR__ . '/../Config/bootstrap.php';
-require_once __DIR__ . '/../Config/verify_csrf.php';
-
-/**
- * Atualiza os dados do usuário no sistema.
- */
+require_once __DIR__ . '/../Config/config_csrf.php';
 
 
 // Gera o token CSRF se não existir
@@ -39,7 +34,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Vincula os parâmetros e executa a query
         $stmt->execute(compact('idUsuario', 'matricula', 'nome', 'telefone', 'email', 'tipo'))
             ? header("Location: http://localhost/demo/views/Usuarios.php")
-
             : throw new Exception("Erro na atualização da tabela usuario");
 
     } catch (Exception $e) {

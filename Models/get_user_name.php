@@ -1,6 +1,4 @@
 <?php
-
-
 /*
 * Exibir nome do usuário logado
 *

@@ -1,13 +1,19 @@
 <?php
+require_once __DIR__ . '/config_log.php';
+
 /*
 * Carregar variáveis ​​de ambiente do arquivo .env
 *
 */
 
-function loadEnv($filePath) {
+function loadEnv($filePath)
+{
     try {
         // Verifica se o arquivo .env existe e é legível
         if (!file_exists($filePath) || !is_readable($filePath)) {
+            // Grava o erro no log
+            error_log("[" . date('Y-m-d H:i:s') . "] ERROR: Arquivo .env não encontrado ou inacessível.\n", 3, __DIR__ . '/../logs/error.log');
+
             throw new Exception();
         }
 
@@ -33,25 +39,19 @@ function loadEnv($filePath) {
         }
     } catch (Exception $e) {
         // Exibe uma mensagem mais genérica e segura
-        echo "<div style='position: relative; height: 100vh; background-color: #f2f2f2; font-family: Arial,;'>
-                <!-- Logo no canto superior esquerdo -->
-                <img src='../public/img/logo-php.png' alt='Logo' 
-                    style='position: absolute; top: 20px; left: 20px; width: 100px;'>
-                
-                <!-- Mensagem centralizada -->
-                <div style='display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center;'>
-                    <h2 style='color: black; padding: 20px; border-radius: 10px;'>
-                        Php informa: Erro ao carregar variáveis de ambiente
-                    </h2>
-                </div>
-              </div>";
+        echo "<style>html, body {height: 100%;margin: 0;padding: 0;background-color: #1e1e1e; display: flex;justify-content: center;align-items: center;}</style>
+
+        <div style='display: flex; justify-content: center; align-items: center; height:100vh; background-color: #1e1e1e; font-family: Arial, sans-serif;'>
+        <div style='background-color: #282c34; padding: 20px; border-radius: 10px; text-align: center; width: 400px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);'>
+        <img src='../public/img/logo-php.png' alt='PHP Logo' style='width: 150px; margin-bottom: 20px;'>
+        <h2 style='color: #ffffff; margin-bottom: 10px;'>Atenção!</h2> <p style='color: #aaaaaa;'>Erro ao carregar variáveis de ambiente</p>
+        </div></div>";
         exit();
     }
 }
 
 // Caminho do arquivo .env
-$envFilePath = __DIR__ . '/../.env'; 
+$envFilePath = __DIR__ . '/../.env';
 
 // Carrega as variáveis do arquivo .env
 loadEnv($envFilePath);
-?>

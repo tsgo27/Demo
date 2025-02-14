@@ -1,7 +1,5 @@
 <?php
-session_start();
 require_once __DIR__ . '/../Config/bootstrap.php';
-
 
 
 
@@ -19,8 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header('Location:/demo/views/Login.php');
             exit();
         }
-
-
 
         // Atualizar o status do usuário no banco de dados
         $stmt = $pdo->prepare("UPDATE usuarios SET user_status = ? WHERE matricula = ?");
