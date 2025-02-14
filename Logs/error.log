@@ -2,3 +2,53 @@
 [14-Feb-2025 14:29:41 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'usu' não encontrada. in C:\xampp\htdocs\Demo\index.php on line 28
 [14-Feb-2025 14:41:20 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'usu' não encontrada. in C:\xampp\htdocs\Demo\index.php on line 28
 [14-Feb-2025 14:42:04 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'usu' não encontrada. in C:\xampp\htdocs\Demo\index.php on line 28
+[14-Feb-2025 14:45:57 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:45:57 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Demo\Controllers\LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:46:18 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:46:18 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Demo\Controllers\LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:46:22 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:46:22 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Demo\Controllers\LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:47:03 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:47:03 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Demo\Controllers\LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:47:47 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:47:47 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Demo\Controllers\LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:48:17 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:48:17 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Demo\Controllers\LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:49:03 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:49:03 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Demo\Controllers\LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:50:03 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:50:03 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Demo\Controllers\LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:52:59 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:52:59 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Demo\Controllers\LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:58:18 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8
+[14-Feb-2025 14:58:18 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\Demo\Controllers/../Config/verify_csrf.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Demo\Controllers\LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Demo\Controllers\LoginController.php on line 8

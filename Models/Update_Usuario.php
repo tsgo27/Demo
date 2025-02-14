@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once __DIR__ . '/../Config/bootstrap.php';
 require_once __DIR__ . '/../Config/config_csrf.php';
 
