@@ -19,7 +19,7 @@ try {
     $error_message = "Erro de conexão: " . $e->getMessage();
 
     // Personaliza o formato de log para remover caminho do arquivo e a linha de erro
-    $formatted_error_message = '[' . date('d-M-Y H:i:s') . ' ' . date_default_timezone_get() . '] ' . 'PHP Fatal error: ' . $error_message . "\n";
+    $formatted_error_message = '[' . date('d-M-Y H:i:s') . ' ' . date_default_timezone_get() . '] ' . $error_message . "\n";
 
     // Registra o erro no log com a mensagem formatada
     error_log($formatted_error_message, 3, __DIR__ . '/../Logs/error.log'); 

@@ -1,8 +1,4 @@
-[14-Feb-2025 12:09:50 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'db' in C:\xampp\htdocs\Demo\index.php on line 31
-[2025-02-14 12:10:08] ERROR: Arquivo .env não encontrado ou inacessível.
-[2025-02-14 13:29:57] ERROR: Arquivo .env não encontrado ou inacessível.
-[14-Feb-2025 13:36:56 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'views' in C:\xampp\htdocs\Demo\index.php on line 31
-[14-Feb-2025 13:45:24 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function getPostData() in C:\xampp\htdocs\Demo\Models\Update_Status_Usuario.php:9
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\Demo\Models\Update_Status_Usuario.php on line 9
+[14-Feb-2025 14:29:01 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'usu' não encontrada. in C:\xampp\htdocs\Demo\index.php on line 28
+[14-Feb-2025 14:29:41 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'usu' não encontrada. in C:\xampp\htdocs\Demo\index.php on line 28
+[14-Feb-2025 14:41:20 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'usu' não encontrada. in C:\xampp\htdocs\Demo\index.php on line 28
+[14-Feb-2025 14:42:04 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'usu' não encontrada. in C:\xampp\htdocs\Demo\index.php on line 28
