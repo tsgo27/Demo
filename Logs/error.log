@@ -1,3 +1,4 @@
-[2025-02-15 01:01:57] ERROR: Arquivo .env não encontrado ou inacessível.
-[2025-02-16 21:27:27] ERROR: Arquivo .env não encontrado ou inacessível.
-[16-Feb-2025 21:31:06 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'pagina.php' não encontrada. in C:\xampp\htdocs\Demo\index.php on line 28
+[2025-02-17 09:52:52] ERROR: Arquivo .env não encontrado ou inacessível.
+[17-Feb-2025 10:32:53 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'controllers' não encontrada. in C:\xampp\htdocs\Demo\index.php on line 28
+[17-Feb-2025 10:33:46 America/Sao_Paulo] PHP Warning:  Erro 404: Página '' não encontrada. in C:\xampp\htdocs\Demo\index.php on line 28
+[17-Feb-2025 10:34:09 America/Sao_Paulo] PHP Warning:  Erro 404: Página 'database' não encontrada. in C:\xampp\htdocs\Demo\index.php on line 28

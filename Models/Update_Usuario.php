@@ -3,8 +3,8 @@ require_once __DIR__ . '/../Config/bootstrap.php';
 require_once __DIR__ . '/../Config/config_csrf.php';
 
 // Registra no log o tipo de requisição (GET, POST, etc.) e a URL acessada
-logMessage("Requisição recebida: " . $_SERVER['REQUEST_METHOD'] . " - " . $_SERVER['REQUEST_URI']);
-logMessage("Dados recebidos: " . json_encode($_REQUEST));
+logMessage("Requisição recebida: " . $_SERVER['REQUEST_METHOD'] . " - " . $_SERVER['REQUEST_URI'], $_REQUEST);
+
 
 // Gera o token CSRF se não existir
 $_SESSION['csrf_token'] ??= bin2hex(random_bytes(32));

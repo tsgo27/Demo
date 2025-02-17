@@ -1,2 +1,0 @@
-[2025-02-16 21:29:05] Requisição recebida: POST - /demo/Models/Update_Usuario.php
-[2025-02-16 21:29:05] Dados recebidos: {"csrf_token":"54e395ed5fb1826f460c6ddcf526146b3a676e67cfbfb11043a48b2310c8a202","idUsuario":"19","matricula":"123456789","editarNome":"Demo","editarTelefone":"62 12345-5678","editarEmail":"demo.dev@email.com","editarTipoUser":"Administrador"}
