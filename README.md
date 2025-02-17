@@ -46,7 +46,9 @@ O sistema já vem com as seguintes funcionalidades configuradas e prontas para u
   
 -✅ **Página de Erro de Conexão com Banco de Dados**: Caso haja falha na conexão com o banco de dados, o sistema exibirá uma página de erro específica. Além disso, o arquivo `.env` permite habilitar o modo de debug para exibir os erros diretamente na página de erro de conexão, facilitando a identificação do problema.
 
--✅ Registro de Logs de Erros: O sistema agora captura e registra automaticamente erros em um arquivo de log, facilitando a identificação e resolução de problemas. Os erros são gravados com data, hora e detalhes do ocorrido, permitindo um melhor monitoramento e manutenção do sistema.
+-✅ Registro de Logs de Erros: O sistema agora captura e registra automaticamente erros em um arquivo de log, facilitando a identificação e resolução de problemas. Os erros são gravados com data, hora e detalhes do ocorrido, proporcionando um monitoramento mais eficiente e uma manutenção mais ágil.
+
+-✅ Log de Requisições POST e GET: Implementamos um novo arquivo de logs chamado requests, onde é possível visualizar todas as requisições POST e GET feitas na aplicação. Cada requisição é registrada com informações detalhadas, incluindo data, hora, parâmetros enviados e resposta do servidor, garantindo maior transparência e rastreabilidade no sistema.
 
 
 ---
