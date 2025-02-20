@@ -1,8 +1,11 @@
 <?php
-session_start(); // Inicia a sessão para gerenciar dados entre requisições do usuário.
-define('BASE_URL', '/demo'); // Define o caminho base do sistema. Não a remova ou altere.
+session_start(); // Inicia a sessão para gerenciar dados entre requisições do usuário. Não a remova.
+define('BASE_URL', '/demo'); // Define o caminho base do sistema para a construção das URLs
 require_once __DIR__ . '/../Config/config_csrf.php'; // Inclui o arquivo de verificação CSRF, que protege contra ataques de falsificação de requisições.
-$_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // Gera tokens aleatórios a cada sessão do usuário, garantindo maior segurança contra ataques CSRF.
+
+if (!isset($_SESSION['csrf_token'])) {
+   $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+} 
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
