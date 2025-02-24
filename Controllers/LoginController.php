@@ -7,10 +7,6 @@ session_start();
 require_once __DIR__ . '/../Config/config_database.php';
 require_once __DIR__ . '/../Config/config_csrf.php';
 
-// Gera o token CSRF se ainda não existir
-if (!isset($_SESSION['csrf_token'])) {
-    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
-}
 
 // Função para buscar a matrícula atualizada do usuário
 function buscarNovaMatricula($pdo, $idUsuario)
