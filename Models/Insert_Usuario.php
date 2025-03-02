@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../Config/bootstrap.php';
 
-// Registra no log o tipo de requisição (GET, POST, etc.) e a URL acessada
+// Registra no log o tipo de requisição (POST) e a URL acessada
 logMessage("Requisição recebida: " . $_SERVER['REQUEST_METHOD'] . " - " . $_SERVER['REQUEST_URI'], $_REQUEST);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -14,13 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $senha = htmlspecialchars(filter_input(INPUT_POST, 'senha', FILTER_DEFAULT), ENT_QUOTES, 'UTF-8');
         $tipo = htmlspecialchars(filter_input(INPUT_POST, 'user_tipo', FILTER_DEFAULT), ENT_QUOTES, 'UTF-8');
         $status = htmlspecialchars(filter_input(INPUT_POST, 'user_status', FILTER_DEFAULT) ?: 'Ativo', ENT_QUOTES, 'UTF-8');
-
-
-        // Verificando se os campos obrigatórios foram preenchidos
-        if (empty($matricula) || empty($nome) || empty($email) || empty($senha)) {
-            echo "error_required";
-            exit;
-        }
 
         // Validando se a matrícula já está cadastrada no banco
         $stmt = $pdo->prepare("SELECT COUNT(*) FROM usuarios WHERE matricula = ?");
