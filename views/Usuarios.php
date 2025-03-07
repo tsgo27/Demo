@@ -20,7 +20,7 @@ require_once __DIR__ . '/../Config/bootstrap.php';
 
     <?php
     // Include Menu Sidebar lateral
-    require_once __DIR__ . '/../Includes/Menu_Sidebar.php';
+    require_once __DIR__ . '/../elements/Menu_Sidebar.php';
     ?>
 
 

@@ -27,9 +27,9 @@ try {
     // Redireciona para a página de erro dependendo do modo de depuração
     if (filter_var($_ENV['DEBUG_MODE'], FILTER_VALIDATE_BOOLEAN)) {
         $error_message = mb_convert_encoding($e->getMessage(), 'UTF-8', 'ISO-8859-1');
-        header("Location: ../page/erro_conexao.php?error=" . urlencode($error_message));
+        header("Location: ../error/erro_conexao.php?error=" . urlencode($error_message));
     } else {
-        header('Location: ../page/erro_conexao.php');
+        header('Location: ../error/erro_conexao.php');
     }
     exit();
 }

@@ -2,8 +2,11 @@ RewriteEngine On
 Options -Indexes
 Allow from all
 
+# Protege contra Clickjacking com CSP
+Header always set Content-Security-Policy "frame-ancestors 'self'"
+
 # Restringe o acesso a pastas específicas
-RewriteRule ^config/ - [F,L]
+RewriteRule ^Config/ - [F,L]
 RewriteRule ^another-restricted-folder/ - [F,L]
 
 # Se o arquivo ou diretório não existir
